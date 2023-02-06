@@ -10,7 +10,12 @@
 <body>
     <h1>Hello Class and Table</h1>
     <section class="table-section">
-        <table>
+        <form id="form" class="form">
+            <input type="text" placeholder="Name" id="name"/>
+            <input type="number" placeholder="Age" id="age"/>
+            <button class="fancy-button" type="submit">Add Random User</button>
+        </form>
+        <table id="table">
             <thead>
                 <tr>
                     <td>ID</td>
@@ -18,7 +23,7 @@
                     <td>Age</td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
                 <tr>
                     <td>123</td>
                     <td>Vasya</td>
@@ -32,5 +37,6 @@
             </tbody>
         </table>
     </section>
+    <script src="src/main.js" type="module"></script>
 </body>
 </html>
