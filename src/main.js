@@ -1,4 +1,5 @@
 import { getRandomNumber, sayHello } from './utils/random.js';
+import { validateData } from './utils/validate.js';
 
 
 const form = document.querySelector('#form');
@@ -19,31 +20,6 @@ function addRow(name, age) {
 function resetForm() {
     form.elements['name'].value = "";
     form.elements['age'].value = "";
-}
-
-
-function validateData(name, age) {
-    if (!name) {
-        alert('Name is required!');
-        return false;
-    }
-
-    if (!age) {
-        alert('Age is required!');
-        return false;
-    }
-
-    if (age < 18) {
-        alert('Age must be >18!');
-        return false;
-    }
-
-    if (age > 120) {
-        alert('Are you serious?');
-        return false;
-    }
-
-    return true;
 }
 
 function increment() {
