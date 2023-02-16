@@ -1,10 +1,13 @@
 import { getRandomNumber, sayHello } from './utils/random.js';
 import { validateData } from './utils/validate.js';
+import { BookCollection } from './temp/BookCollection.js';
 
 
 const form = document.querySelector('#form');
 const tbody = document.querySelector('#table-body');
 let id = 124;
+
+const bookCollection = new BookCollection();
 
 
 function addRow(name, age) {
